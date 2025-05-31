@@ -1,8 +1,3 @@
-**2. `script.js` (Dashboard Logic)**
-This file will fetch and process your CSV data, and then render the dashboard. **Remember to replace the placeholder CSV URLs.**
-
-
-```javascript
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
     const GOOGLE_SHEET_CSV_URLS = {
@@ -603,20 +598,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initializePage();
 });
-```
-
----
-
-**Before you use this:**
-
-1.  **Update `script.js` Placeholders:**
-    * Open the `script.js` file.
-    * Find the `GOOGLE_SHEET_CSV_URLS` object.
-    * Replace `'URL_FOR_MASTER_QUIZ_DATA_CSV_HERE'` with the published CSV URL for your `MasterQuizData` sheet.
-    * Replace `'URL_FOR_QUESTION_DATA_CSV_HERE'` with the published CSV URL for your `QuestionData` sheet.
-2.  **Save both `index.html` and `script.js`** in the root of your GitHub repository that's configured for GitHub Pages.
-3.  **Commit and push** these new files to GitHub.
-4.  Wait a few minutes for GitHub Pages to update.
-5.  Test your dashboard by going to its URL (e.g., `https://your-username.github.io/your-repo-name/`). It should prompt for a "Student Gmail ID". Enter one of your dummy Gmail IDs (e.g., `ghiassabir2@gmail.com`).
-
-This setup should give you a good starting point for your SAT Hub themed dashboard, pulling data from the two CSVs we prepared. We can then refine it further if need
